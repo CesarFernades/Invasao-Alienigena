@@ -24,3 +24,12 @@ public class Alienigena {
             y += altura; // Desce um pouco
         }
     }
+
+    public void desenhar(Graphics g) {
+        g.drawImage(imagem, x, y, largura, altura, null); // Desenha a imagem em vez do retângulo
+    }
+
+    public Rectangle getLimites() {
+        return new Rectangle(x, y, largura, altura);
+    }
+}
